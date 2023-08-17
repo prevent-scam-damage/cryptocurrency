@@ -2,7 +2,7 @@ document.getElementById('connectButton').addEventListener('click', async () => {
     const accountNumber = document.getElementById('accountNumber').value;
 
     try {
-        const response = await fetch('http://localhost:8080/checkAccount', {
+        const response = await fetch('http://localhost:8080/connect_wallet', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
