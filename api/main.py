@@ -30,7 +30,6 @@ def read_root():
 async def find_black_list(data: dict):
 
     address = data.get("address")
-    print(data, address)
     return {"status" : str(api.find_db(db, address))}
 
 if __name__ == "__main__":
