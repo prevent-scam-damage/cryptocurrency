@@ -7,7 +7,6 @@ document.getElementById('connectButton').addEventListener('click', async () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-
             body: JSON.stringify({ "accountNumber": accountNumber })
         });
 
@@ -16,11 +15,12 @@ document.getElementById('connectButton').addEventListener('click', async () => {
         }
 
         const data = await response.json();
-        if (data.status === 'found') {
-            alert("계좌 발견: " + data.data);
+        if (data.status === 1) {
+            alert("계좌가 존재합니다.");
         } else {
             alert("계좌를 찾을 수 없습니다.");
         }
+        
     } catch (error) {
         alert("API와 연결할 수 없습니다.");
     }
