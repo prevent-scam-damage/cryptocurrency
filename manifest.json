@@ -1,0 +1,27 @@
+{
+    "name": "test",
+    "description": "test",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/img2.jpg",
+        "32": "images/img2.jpg",
+        "48": "images/img2.jpg",
+        "128": "images/img2.jpg"
+      }
+    },
+    "icons": {
+      "16": "images/img2.jpg",
+      "32": "images/img2.jpg",
+      "48": "images/img2.jpg",
+      "128": "images/img2.jpg"
+    }
+  }

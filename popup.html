@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>My Extension Popup</title>
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            width: 250px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .input-container {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Extension</h2>
+    <p>Connect to your wallet:</p>
+
+    <div class="input-container">
+        <label for="accountNumber">계좌 번호:</label>
+        <input type="text" id="accountNumber" name="accountNumber" placeholder="계좌 번호를 입력하세요">
+    </div>
+    <button id="connectButton">Connect</button>
+    <script src="popup.js"></script>
+</body>
+</html>
